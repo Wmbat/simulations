@@ -1,0 +1,7 @@
+libs =
+import libs += libcommon%lib{common}
+import libs += tl-expected%lib{tl-expected}
+
+exe{sph-fluid}: {hxx ixx txx cxx}{**} $libs
+
+cxx.poptions =+ "-I$out_root" "-I$src_root"

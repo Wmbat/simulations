@@ -1,0 +1,6 @@
+project = sph-fluid
+
+using version
+using config
+using install
+using dist

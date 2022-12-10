@@ -1,0 +1,6 @@
+project = libcommon
+
+using version
+using config
+using install
+using dist

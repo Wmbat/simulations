@@ -1,0 +1,15 @@
+: 1
+name: sph-fluid
+version: 0.1.0-a.0.z
+project: simulations
+summary: sph-fluid C++ executable
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/simulations
+email: wmbat-dev@protonmail.com
+#build-error-email: wmbat-dev@protonmail.com
+depends: * build2 >= 0.14.0
+depends: * bpkg >= 0.14.0
+
+depends: libcommon >= 0.0.0
+depends: tl-expected  ^1.0.0
