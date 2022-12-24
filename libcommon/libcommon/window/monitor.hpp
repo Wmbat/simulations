@@ -14,34 +14,7 @@
  * limitations under the License.
  */
 
-#pragma once
-
-#include <libcommon/window/window.hpp>
-
-#include <cstdint>
-#include <string>
-#include <utility>
-#include <xcb/xcb.h>
-
 namespace common
 {
-	window::window(std::string title, std::uint32_t width, std::uint32_t height) :
-		m_title(std::move(title)), m_width(width), m_height(height),
-		m_x11_connection_ptr(xcb_connect(nullptr, nullptr))
-	{}
-
-	auto window::title() const -> std::string_view
-	{
-		return m_title;
-	}
-
-	auto window::width() const -> std::uint32_t
-	{
-		return m_width;
-	}
-
-	auto window::height() const -> std::uint32_t
-	{
-		return m_height;
-	}
-} // namespace common
+	
+}

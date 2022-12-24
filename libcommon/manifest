@@ -12,5 +12,7 @@ depends: * build2 >= 0.15.0
 depends: * bpkg >= 0.15.0
 
 depends: range-v3 ^0.12.0
-depends: glfw ^3.3.8
 # depends: spdlog ^1.10.0
+
+requires: libxcb >= 1.1.0
+requires: libxcb-randr >= 1.1.0

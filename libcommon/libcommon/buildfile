@@ -16,9 +16,11 @@ intf_libs = # Interface dependencies.
 import intf_libs += range-v3%lib{range-v3}
 
 impl_libs = # Implementation dependencies.
-import impl_libs += glfw%lib{glfw}
 
-lib{common}: {hxx ixx txx cxx}{** -version} hxx{version} $impl_libs $intf_libs
+xcb_libs += libxcb%lib{xcb}
+xcb_libs += libxcb-randr%lib{xcb-randr}
+
+lib{common}: {hxx ixx txx cxx}{** -version} hxx{version} $impl_libs $intf_libs $xcb_libs
 
 hxx{version}: in{version} $src_root/manifest
 
